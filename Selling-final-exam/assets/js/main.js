@@ -1,6 +1,7 @@
 const BASE_URL = "http://localhost:8080";
 const cardsData = document.querySelector(".cards-page");
 const header = document.querySelector("header");
+let id = new URLSearchParams(window.location.search).get("id");
 
 async function getData() {
   const response = await axios(`${BASE_URL}/products`);
@@ -31,7 +32,7 @@ function drawCards(data) {
                   </div>
                 </div>
                 <p>${element.description}</p>
-                <a href="detail.html">VIEW DETAILS...</a>
+                <a href="./detail.html?id=${element.id}">VIEW DETAILS...</a>
               </div>
             </div>
     `;
@@ -41,5 +42,4 @@ function drawCards(data) {
 window.addEventListener("scroll", function () {
   header.classList.toggle("header-scroll", window.scrollY > 0);
 });
-
 
