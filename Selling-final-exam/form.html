@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="form-sect">
+      <div class="container">
+        <div class="form-sect">
+          <h1>ADD PRODUCT</h1>
+          <form action="">
+            <input type="text" placeholder="Product Name" required />
+            <input type="text" placeholder="Product Description" required />
+            <input type="text" placeholder="Product Image URL" required />
+          </form>
+          <button type="submit">ADD</button>
+        </div>
+      </div>
+    </section>
+    <section id="table-sect">
+      <div class="container">
+        <div class="table-sect">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="search products ..."
+          />
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>PRODUCT NAME</th>
+                <th>PRODUCT IMAGE</th>
+                <th>PRODUCT DESCRIPTION</th>
+                <th>CRUD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
+      integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/table.js"></script>
+  </body>
+</html>
